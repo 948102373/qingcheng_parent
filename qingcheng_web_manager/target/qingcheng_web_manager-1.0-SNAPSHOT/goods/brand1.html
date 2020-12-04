@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>品牌管理</title>
+    <link rel="stylesheet" href="../css/elementui.css">
+    <script type="text/javascript" src="../js/vue.min.js"></script>
+    <script type="text/javascript" src="../js/elementui.js"></script>
+    <script type="text/javascript" src="../js/axios-0.18.0.js"></script>
+</head>
+<body>
+<div id="app">
+    <input type="button" value="发送Ajax请求" @click="sendAjax()">
+</div>
+<!-- 添加事件-->
+
+<script type="text/javascript">
+    /*new Vue({
+        el:"#app",
+        data:{
+
+        },
+        methods:{
+            sendAjax:function () {
+                //axios插件发请求,已经定义好的一个对象,对象名字就是axios
+                /!*
+                   对象方法 get() 发送异步get请求
+                   传递请求服务器的地址URL  ,第一个参数
+                   传递请求到服务器的参数,第二个参数
+
+                   get函数调用另一个函数 then() 表示响应成功的回调函数
+                   响应成功调用then() 需要在then函数中,传递我们自己定义的匿名函数
+                   自己定义匿名函数中,传递参数(名字任意)
+                   response 就是服务器响应回来的数据
+                 *!/
+                axios.get("/brand/findAll.do").then( function(response){
+                    console.log(JSON.stringify(response));
+                } );
+            }
+        }
+    });*/
+      alert("bbbb");
+      /*new Vue({
+          el: '#app',
+          data() {
+              return {
+                  tableData: []
+              }
+          },
+          created() {
+              alert("ccccc");
+              axios.get('/brand/findAll.do').then(respons=> {
+                  alert("aaaaa");
+                  alert(JSON.stringify(respons));
+              });
+          },
+
+      });
+    */
+</script>
+</body>
+
+
+</html>

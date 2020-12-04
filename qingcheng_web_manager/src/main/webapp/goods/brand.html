@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>vueAjax</title>
+    <script type="text/javascript" src="../js/vue.min.js"></script>
+    <script type="text/javascript" src="../js/elementui.js"></script>
+    <script type="text/javascript" src="../js/axios-0.18.0.js"></script>
+</head>
+<body>
+<div id="app">
+
+</div>
+
+<script type="text/javascript">
+    new Vue({
+        el: '#app',
+        data() {
+            return {
+                tableData: []
+            }
+        },
+        created() {
+            axios.get('/brand/findAll.do').then(respons=> {
+                alert(JSON.stringify(respons));
+            });
+        },
+
+    });
+</script>
+</body>
+</html>
